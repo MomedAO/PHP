@@ -1,0 +1,77 @@
+body{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Tw Cen Mt";
+    font-size: 1.125em;
+}
+form{
+    text-align: left;
+    display: flex;
+}
+fieldset{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+label{
+    display: flex;
+    flex-basis: calc(50% - 20px);
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+label input{
+    flex-basis: calc(100% - 20px);
+}
+
+input, textarea{
+    flex-basis: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+fieldset .dispblock{
+    display: block;
+    margin: 0;
+}
+#cadastrar{
+    font-size: 1.125em;
+    margin: 10px 0 0 0;
+    /* max-width: fit-content;             */
+}
+::-webkit-input-placeholder{
+    color: #58585894;
+}
+::-moz-placeholder{
+    color: #58585894;
+}
+:-ms-input-placeholder{
+    color: #58585894;
+}
+table{
+    margin: 20px auto;
+    display: flex;
+    flex-basis: 100%;
+}
+tr{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 700px;
+}
+th{
+    background-color: #c9c9c9;
+    text-align: left;
+    padding: 10px;
+    font-size: 1em;
+    flex-basis: 100%;
+}
+td{
+    display: flex;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 2px 0;
+    border-bottom: solid 1px #000;
+}

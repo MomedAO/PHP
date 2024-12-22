@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-style: none;
+    color: #3D4C4A;
+    font-family: "Tw Cen Mt";
+}
+body {
+    background: #3D4C4A;    
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+}
+
+main {
+    max-width: 800px;
+    height: 500px;
+    background: #EFEFEF;
+    margin: 0 auto;
+    border-radius: 80px;
+    box-shadow: 1px 1px 40px 1px #EFEFEF;
+}
+
+header{
+    padding: 60px 0 20px 0;
+    text-align: center;
+    margin: 0;
+}
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+    font-family: 'Bauhaus 93';
+}
+
+.product {
+    display: flex;
+    max-width: 600px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+form {
+    flex-basis: 60%;
+}
+form label{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+form label h3 {
+    flex-basis: 100%;
+    margin: 0;
+    font-weight: 100;
+}
+input[type='text'], input[type='number']{
+    flex-basis: 90%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 4px;
+    border-radius: 8px;
+    background: none;
+    border: #3D4C4A 2px solid;
+}
+form label section {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 20px;
+}
+
+form label section input {
+    background: #3D4C4A;
+    color: #EFEFEF;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+form label section input:hover {
+    background: #495c59;
+}
+
+.product article {
+    flex-basis: 40%;
+    padding: 20px;
+}
+.product article p{
+    text-align: justify;
+}
+.product article ul{
+    padding-left: 20px;
+}
+
+.product article div{
+    flex-basis: 100%;
+    background: #3D4C4A;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.product article div h3, .product article div li {
+    color: #EFEFEF;
+    list-style: none;
+}
+
+@media (max-width: 800px) { 
+    body {
+        width: 100%;
+        height: 100%;
+    }   
+    main {
+        max-width: 600px;
+        height: 100%;
+        margin: 40px auto;
+    }
+    h1 {
+        font-size: 2.6em;
+    }
+    .product {
+        max-width: 400px;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    form {
+        flex-basis: 100%;
+    }
+    input[type='text'], input[type='number']{
+        flex-basis: 100%;
+    }
+    .product article {
+        flex-basis: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .product article ul{
+        padding-left: 20px;
+    }
+    .product article div{
+        margin: 20px 0;
+    }
+
+}
+@media (max-width: 600px) { 
+    body {
+        background: #EFEFEF;
+    }   
+    main {
+        max-width: 100%;
+        height: 100%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
+@media (max-width: 400px) { 
+    h1 {
+        font-size: 2em;
+    }
+
+}
+@media (max-width: 340px) { 
+    form label section {
+        flex-wrap: wrap;
+    }
+    form label section input {
+        margin-bottom: 20px;
+    }
+}
