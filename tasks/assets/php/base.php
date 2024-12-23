@@ -11,17 +11,7 @@
         echo mysqli_connect_error();
         die();
     }
-
-    function get_tasks($connection) { //busca os dados do banco de dados
-        $sqlGet = "SELECT * FROM tasks";
-        $solution = mysqli_query($connection, $sqlGet);
-        $tasks = [];
-        while ($task = mysqli_fetch_assoc($solution)) {
-            $tasks[] = $task;
-        }
-        return $tasks;
-    }
-
+    
     function save_tasks($connection, $task) { //salva os dados no banco de dados
         $sqlSave = "INSERT INTO tasks
             (name, description, deadline, priority, finished) 
@@ -34,5 +24,15 @@
             )
         ";
         mysqli_query($connection, $sqlSave);
+    }
+
+    function get_tasks($connection) { //busca os dados do banco de dados
+        $sqlGet = "SELECT * FROM tasks";
+        $solution = mysqli_query($connection, $sqlGet);
+        $tasks = [];
+        while ($task = mysqli_fetch_assoc($solution)) {
+            $tasks[] = $task;
+        }
+        return $tasks;
     }
 ?>

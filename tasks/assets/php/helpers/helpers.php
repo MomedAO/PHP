@@ -15,7 +15,7 @@
         return $priority;
     }
     function trans_date_to_base($date) {
-        if ($date == '') {
+        if (empty($date)) {
             return '';
         }
 
@@ -25,7 +25,7 @@
     }
     //converte a data para exibissao no formato d/m/a
     function trans_date_to_show($date) {
-        if ($date == '' OR $date == '0000-00-00') {
+        if (empty($date) || $date == '0000-00-00') {
             return '';
         }
 

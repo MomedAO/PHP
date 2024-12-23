@@ -1,0 +1,64 @@
+body{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Tw Cen Mt";
+    font-size: 1.125em;
+}
+form{
+    text-align: left;
+}
+fieldset{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin: 0;
+}
+label{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+label input, textarea{
+    flex-basis: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input, textarea{
+    padding: 10px;
+}
+fieldset .dispblock{
+    display: block;
+    margin: 0;
+}
+#cadastrar{
+    font-size: 1.125em;
+    margin: 10px 0 0 0;            
+}
+table{
+    margin: 20px auto;
+    display: flex;
+    flex-basis: 100%;
+}
+tr{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 700px;
+}
+th{
+    background-color: #c9c9c9;
+    text-align: left;
+    padding: 10px;
+    font-size: 1em;
+    flex-basis: 100%;
+}
+td{
+    display: flex;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 2px 0;
+    border-bottom: solid 1px #000;
+}
